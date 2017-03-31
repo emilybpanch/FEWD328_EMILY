@@ -1,0 +1,37 @@
+
+.header {
+	text-align: center;
+	color: #ee00ee;
+	font-family: Helvetica;
+}
+
+.header2 {
+	text-align: center;
+	color: #ee00ee;
+}
+
+p {
+		text-align: left;
+		color: purple;
+		font-family: sans-serif;
+}
+
+ul.a {
+	color: red;
+}
+
+img {
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+
+.a {
+	color:#ee00fe;
+	font-family: sans-serif;
+}
+
+.secondaryheader {
+	color: #ee00fe;
+	font-family: sans-serif;
+}
