@@ -1,0 +1,119 @@
+body {
+  color: #acacac;
+  background-color: #3d3d3d;
+  border-style: solid;
+  border-color: #acacac;
+  border-width: 2px;
+  padding: 25px;
+  margin: 15px;
+  font-size: 10px;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+
+hr {
+  background-color: #acacac;
+  border: 0;
+  height: 1px;
+}
+
+p {
+  color: white;
+}
+
+#subhead {
+  text-align: center;
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+#subhead b {
+  font-weight: normal;
+  color: #acacac
+}
+
+#sociallinks {
+  text-align: center;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+#sociallinks b {
+  font-weight: normal;
+}
+
+h3 {
+  font-style: bold;
+  font-family: helvetica;
+  color: white;
+}
+
+a {
+  color: #1cd48e;
+}
+
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: helvetica;
+    color: #acacac;
+}
+
+span {
+  font-family: helvetica;
+  color: white;
+}
+
+span bulletheader {
+  font-weight: bold;
+}
+
+span date {
+  font-size: 8px;
+  color: #acacac;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: square;
+  list-style-color: #acacac;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#relevantexperience {
+  margin-bottom: 20px !important;
+}
+
+#education {
+  margin-bottom: 20px;
+}
+
+#education > ul li {
+  margin-bottom: 2px;
+}
+
+img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 150px;
+  border-style: solid;
+  border-color: #acacac;
+  border-width: 1px;
+  padding: 4px
+
+}
+
+#aboutme {
+  font-size: 13px;
+
+}
