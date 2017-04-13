@@ -1,0 +1,232 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Emily Panchame
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;/* Google font family */
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container-header {
+  height: 500px;  
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+      background-size: cover;
+}
+
+.container-benefits {
+  height: auto;
+  background-color: white;
+}
+
+.container-quote {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover; opacity: .9 ;
+  height: auto;
+  margin: 0 auto; /*to center horizontally on the page*/
+}
+
+#signup-bar {
+  background-color: #f9e42e;
+  height: 60px;
+
+}
+
+.footer {
+  background-color: #121212;
+  height: 200px;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 800; /*extra bold*/
+  position: relative;
+  top: 40px;
+  left: 15%;
+}
+
+.container-header h2 {
+  color: white;
+  font-weight: 600; /*semibold*/
+  font-size: 24px; 
+  text-align: center;/*to center horizontally on the page*/
+  position: relative;
+  top: 120px; /*to give sufficient space between h1 and h2*/
+}
+
+.btn-getit {
+    background-color: #f9e42e;
+    border: none;
+    border-radius: 5px;
+    color: #121212;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800; /*extra bold*/
+    position: relative;
+    top: 160px;
+    display: block;
+    margin: 0 auto;/*to center horizontally on the page*/
+}
+
+.text-benefits {
+  position: relative;
+  left: 15%;
+  color: #606161;
+  font-weight: 300; /*light*/
+  font-size: 13px;
+  width: 40%; /*to make the text wrap and not fill the entire width*/
+}
+
+.text-benefits h2 {
+  font-weight: 600; /*semibold*/
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.text-benefits p {
+  padding-top: 10px;
+}
+
+.text-benefits ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  position: relative;
+  left: 15%; /*to indent the bullets*/
+  font-weight: 300; /*light*/
+  font-size: 13px;
+}
+
+.container-quote blockquote {
+  font-weight: 300; /*300i didn't render italics*/
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  max-width: 330px;/*to set a width for the quote*/
+  padding-top: 30px;
+  display: inline block;
+  margin: 0 auto;/*to center horizontally on the page*/
+}
+
+.container-quote p {
+  font-weight: 600; /*semibold*/
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.btn-signup {
+    background-color: #121212;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800; /*extra bold*/
+    position: relative;
+    top: 18%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer h2 {
+  font-weight: 800; /*extra bold*/
+  font-size: 24px;
+  color: #f9e42e;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.social-icons { 
+  display: inline-flex; /*This cannot be a good way to do this but I've tried a bunch of things and this is the closest I could get*/
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  left: 275px;
+}
+
+.fb-logo {
+  width: 10px;
+  height: 20px;
+  margin: 5px;
+
+}
+
+.tw-logo {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+
+}
+
+footer p {
+  font-weight: 600; /*semibold*/
+  font-size: 9px;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 30px;
+
+}
+
+
