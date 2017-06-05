@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  /*show header on scroll down; surface on scroll up*/
+//hide top nav on scroll down; surface on scroll up//
 
 $(function(){
   // Hide Header on on scroll down
@@ -18,7 +18,7 @@ $(function(){
       hasScrolled();
       didScroll = false;
     }
-  }, 250);
+  }, 300);
   
   function hasScrolled() {
     var st = $(this).scrollTop();
@@ -43,74 +43,54 @@ $(function(){
   }
   });
 
-/*slick slideshow*/
+
+//Animate scroll between top nav and each section//
+
+
+$('a[href*="#"]').click(function(event) {
+      // Figure out which element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      
+      // Does a scroll target exist?
+        if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+         scrollTop: target.offset().top
+        }, 2000);
+        }
+    });
+
+
+//Slick slideshow plugin//
 
   $(".slideshow").slick({
     centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
+    centerPadding: '20px',
+    slidesToShow: 2,
     responsive: [
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        arrows: true,
+        centerMode: false,
+        centerPadding: '10x',
+        slidesToShow: 1,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 481,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+        centerPadding: '0',
+        slidesToShow: 1,
       }
     }
-  ]
-});
-});
-
-/*Anchor top nav items to city openers
-
-
-
-  $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
+    ]
   });
+});
 
-*/
-     
+
+
