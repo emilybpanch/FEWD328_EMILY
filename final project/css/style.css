@@ -31,6 +31,7 @@ body {
 
 }
 
+/* you might want a back-up font here like in your body font-family rule*/
 h1, h2 {
 	font-family: 'Domine';
 	text-align: center;
@@ -48,6 +49,7 @@ h2 {
 	margin: auto;
 }
 
+/* i would maybe use a different color besides the default */
 a {
 	text-decoration: none;
 }
@@ -102,6 +104,27 @@ a:hover {
 	height: 800px;
 }
 
+/* you could refactor some of this here, but you would need to swap ids for classes 
+for the city names, or (easier) add something like class="city" to your sections so they
+basically you could write
+.city {
+	background-size: cover;
+	background-attachment: fixed;
+	height: 900px;
+	display: block;
+	border-top: 6px solid black;
+}
+then just define the background for each city section with one line of styling
+#tokyo{
+	//background rule
+}
+#kyoto{
+	//background rule
+}
+#osaka{
+	//background rule
+}
+*/
 #tokyo {
 	background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.5)), url(../images/tokyo/tokyo-city2.jpg) no-repeat center center;
 	background-size: cover;
@@ -176,7 +199,23 @@ ul {
 	padding: 10px 0 0 50px;
 }
 
+/* same refactoring suggestion from the city sections applies here 
+and to the video styling you have below
 
+.list, .video {
+	background-size: cover;
+	background-attachment: fixed;
+	height: 800px;
+	display: block;
+	border-top: 6px solid black;
+}
+
+.list1{
+	background rule
+}
+
+etc, etc
+*/
 .list1 {
 	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../images/tokyo/observatory2.jpg) no-repeat center top;
 	background-size: cover;
