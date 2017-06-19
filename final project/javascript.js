@@ -2,6 +2,27 @@ $(document).ready(function(){
 
 //hide top nav on scroll down; surface on scroll up//
 
+//so if you pull this out of the wrapper function (which I'm not sure is essential here)
+//you can break this down to be more modular/readable
+
+//rather than having an anonymous function -- i.e. function() {//action} -- I would make this
+//a function declaration, so you can factor out the hasScrolled function, and use the vars you
+//set as parameters that you pass to hasScrolled
+
+//function scrollChecker(){
+  //window.scroll fn goes here
+
+  //hasScrolled( vars go here )
+//} //scrollChecker definition ENDS HERE and then you can invoke it just using
+//scrollChecker(); below it or at the end of the js file within your document ready wrapper fn
+
+//function hasScrolled( parameters ){
+  //you can now have this defined OUTSIDE your scrollChecker fn, which makes it cleaner to read
+//}
+
+//Alternatively: you could add a class to the navbar on scroll, and have a transition
+//that animates the navbar to display:none
+
 $(function(){
   // Hide Header on on scroll down
   var didScroll;
